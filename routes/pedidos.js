@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     try {
         console.log(' Obteniendo pedidos...');
         
-        // CORRECTO: Usar pool.query() con await
+        // Usar pool.query() con await pq q flojera
         const [pedidos] = await pool.query(`
             SELECT 
                 p.*,
